@@ -1,0 +1,14 @@
+{
+  "name": "tonejs-demo",
+  "version": "1.0.0",
+  "description": "A simple demonstration of Tone.js functionalities.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "tone": "^14.8.8"
+  },
+  "author": "",
+  "license": "ISC"
+}
