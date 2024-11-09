@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tone.js Demo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="playButton">Play</button>
+    <button id="stopButton">Stop</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js"></script>
+    <script>
+        const synth = new Tone.Synth().toDestination();
+
+        document.getElementById('playButton').addEventListener('click', () => {
+            synth.triggerAttackRelease('C4', '8n');
+        });
+
+        document.getElementById('stopButton').addEventListener('click', () => {
+            synth.triggerRelease();
+        });
+    </script>
+</body>
+</html>
