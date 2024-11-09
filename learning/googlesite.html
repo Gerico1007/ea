@@ -1,0 +1,78 @@
+​<html>
+<head>
+<style>
+/* Styles par défaut */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #cf1212;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Styles pour les mobiles */
+
+@media screen and (max-width: 768px) {
+
+  body {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+}
+
+</style>
+<script>
+Your JS here
+</script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Recherche de documents Google Drive</title>
+</head>
+<body>
+  <h1><h1 style="color: white;">Rechercher des documents</h1></h1>
+  <form action="https://drive.google.com/drive/search" method="get">
+    <input type="text" name="q" placeholder="Saisissez votre recherche" size="50">
+    <input type="submit" value="Rechercher">
+  </form>
+</body>
+</html>
+</body>
+</html>
